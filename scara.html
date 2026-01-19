@@ -79,14 +79,64 @@
 
             <div style="text-align: center;">
               <video style="max-width: 40%; height: auto;" controls>
-                <source src="images/scara/video_1.MP4" type="video/mp4">
-                
+                <source src="images/scara/video_1.MP4" type="video/mp4">    
               </video>
             </div>
+
+            <!-- DISEÑO MECÁNICA -->
             <h2 class="mb-3 text-center" > <strong>CAD Design Process</strong></h2>
-            <h3 class="mb-3 mt-5"> <i>Ideation Stage  </i> </h3>
-            <p></p>
-           <!--  <p style="text-align: center;">
+              <h3 class="mb-3 mt-5"> <i>Ideation Stage  </i> </h3>
+                <p style="text-align: justify;">The process began with a technical research phase, analyzing various configurations of SCARA robots with RRP architecture (two revolute joints and one prismatic joint). Based on this analysis, I developed a series of preliminary sketches and iterative CAD models. The main objective was to validate the spatial feasibility of the initial ideas, ensuring that each proposal complied with the dimensional limits and performance within the defined workspace.</p>
+                
+                <figure style="text-align: center;">
+                  <img src="images/scara/ideación/bocetos.png" alt="Initial Sketches" class="img-fluid" style="max-width: 80%;">
+                  <figcaption style="margin-top: 10px; font-style: italic; color: #999;">Initial Sketches</figcaption>
+                </figure>
+                
+                <h3 class="mb-3 mt-5"> <i>Modeling and Refinement Stage  </i> </h3>
+                <p style="text-align: justify;"> Based on the references researched, the first CAD models went through a series of revisions. This stage focused on refining the design, where we transformed complex geometries into a more efficient and simpler structure. The result was a design that avoids complete dependence on 3D printing and integrates MDF and acrylic, achieving a modular system that is easy and quick to manufacture and repair.</p>
+                
+                <figure style="text-align: center;">
+                  <img src="images/scara/ideación/primeros_cads.png" alt="Initial Sketches" class="img-fluid" style="max-width: 80%;">
+                  <figcaption style="margin-top: 10px; font-style: italic; color: #999;">Initial CAD Designs</figcaption>
+                </figure>
+                
+                <figure style="text-align: center;">
+                  <img src="images/scara/cad_diagonal.jpg" alt="Initial Sketches" class="img-fluid" style="max-width: 80%;">
+                  <figcaption style="margin-top: 10px; font-style: italic; color: #999;">Final CAD Design</figcaption>
+                </figure>
+                
+                <figure style="text-align: center;">
+                  <img src="images/scara/banner_render.png" alt="Initial Sketches" class="img-fluid" style="max-width: 80%;">
+                  <figcaption style="margin-top: 10px; font-style: italic; color: #999;">Final CAD Design</figcaption>
+                </figure>
+                
+            <h2 class="mb-3 text-center" > <strong>Manufacturing Process</strong></h2>
+            
+              <p style="text-align: justify;">For the materialization of the manipulator, a hybrid manufacturing approach was chosen, selecting the most suitable process for each component according to its structural and mechanical function. 3D printing was used for complex geometries, while for the bases and secondary housings (such as the electronics housing), I used laser cutting on acrylic and MDF, which resulted in shorter printing times, filament savings, and visibility of the belts and pulleys.</p>
+              <p style="text-align: justify;">The design allows easy access to the motors and transmission systems, facilitating the adjustment of the belts/pulleys that can be seen in the assembly.</p>
+              <p style="text-align: justify;">Bearings, bushings, pulleys, rotating plates, standard hardware, and motors with encoders were integrated, ensuring that the transition from the CAD to the physical prototype maintained the necessary tolerances for precision movement.</p>
+              
+              <figure style="text-align: center;">
+                <img src="images/scara/manufactura/piezas_ensamble.png" alt="Initial Sketches" class="img-fluid" style="max-width: 80%;">
+                <figcaption style="margin-top: 10px; font-style: italic; color: #999;">3D Printed Parts and Acrilyc Parts </figcaption>
+              </figure>
+              
+              <figure style="text-align: center;">
+                <img src="images/scara/manufactura/ensamble.jpeg" alt="Initial Sketches" class="img-fluid" style="max-width: 80%;">
+                <figcaption style="margin-top: 10px; font-style: italic; color: #999;">First assembly of the parts</figcaption>
+              </figure>
+              
+            <h2 class="mb-3 text-center" > <strong>Inverse Kinematics and Multibody Simulation</strong></h2>
+
+            <div style="text-align: center;">
+              <video style="max-width: 90%; height: auto;" controls>
+                <source src="images/scara/software/gemelo_digital.mp4" type="video/mp4">    
+              </video>
+            </div>
+            <!--   <p style="text-align: justify;">The SCARA uses inverse kinematics to convert Cartesian targets into joint angles. A timing law synchronizes all joints to ensure coordinated motion, allowing the manipulator to reach targets smoothly and reliably.</p>
+             -->
+              <!--  <p style="text-align: center;">
               <img src="images/hovercraft/cad_aerodeslizador.png" alt="" class="img-fluid" style="max-width: 60%;">
             </p>
             <p>During the development of this project, I led the design and manufacturing stages, taking responsibility for defining critical dimensions, material selection, and assembly protocols using Autodesk Inventor.</p>
